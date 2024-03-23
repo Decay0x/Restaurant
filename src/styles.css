@@ -1,0 +1,91 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  background-image: url('./restaurant.jpeg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  background-color: #f0f0f0;
+}
+.credits {
+  display: flex;
+  flex-wrap: wrap;
+  width: 200px;
+  font-size: 12px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.credits > a {
+  text-decoration: none;
+  color: white;
+}
+.navBar {
+  width: 20rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 20px;
+  padding: 20px;
+}
+.navBar button {
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #333;
+  color: #fff;
+}
+.navBar button:hover {
+  cursor: pointer;
+  background-color: #fff;
+  color: #333;
+}
+.marketingStatement {
+  font-size: 2rem;
+  text-align: center;
+  color: #fff;
+}
+#content {
+  max-width: 1200px;
+  height: auto;
+}
+.menuOptions {
+  display: grid;
+  color: white;
+  grid-template-columns: 1fr auto;
+  gap: 2rem;
+  margin-top: 20%;
+}
+.menuOptions div,
+.aboutTab div {
+  padding: 20px;
+  cursor: pointer;
+  box-shadow: -1px -1px 25px 5px rgba(245, 157, 5, 0.4);
+}
+.menuOptions h4,
+.aboutTab h4 {
+  text-align: center;
+  font-size: 2rem;
+}
+.menuOptions span,
+.aboutTab span {
+  font-size: 70%;
+}
+.aboutTab p {
+  font-size: 1rem;
+}
+.aboutTab {
+  display: flex;
+  color: white;
+  flex-flow: column wrap;
+  gap: 12px;
+}
